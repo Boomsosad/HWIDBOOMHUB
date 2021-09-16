@@ -1,1 +1,16 @@
-# HWIDBOOMHUB
+local key = _G.Key
+local check = "https://boomhub.000webhostapp.com/check.php/check.php?key=" .. key
+if game:HttpGet(check) == "Whitelisted" then
+loadstring(game:HttpGet("https://boomhub.000webhostapp.com/script.lua"))()
+else
+game.Players.LocalPlayer:Kick("HWID ไม่ตรงรันทำเหี้ยไร??
+HWID ไม่ตรงรันทำเหี้ยไร??
+HWID ไม่ตรงรันทำเหี้ยไร??
+HWID ไม่ตรงรันทำเหี้ยไร??
+HWID ไม่ตรงรันทำเหี้ยไร??
+HWID ไม่ตรงรันทำเหี้ยไร??
+HWID ไม่ตรงรันทำเหี้ยไร??
+HWID ไม่ตรงรันทำเหี้ยไร??
+HWID ไม่ตรงรันทำเหี้ยไร??
+HWID ไม่ตรงรันทำเหี้ยไร??")
+end
