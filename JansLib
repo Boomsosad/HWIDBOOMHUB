@@ -711,43 +711,19 @@ local library = {
 					label.Main.AutomaticSize = Enum.AutomaticSize.XY
 					label.Main.Font = window.theme.font
 					label.Main.Text = text
-					label.Main.TextColor3 = window.theme.itemscolor
-					label.Main.TextSize = 15
-					label.Main.TextStrokeTransparency = 1
-					label.Main.TextXAlignment = Enum.TextXAlignment.Left
-					updateevent.Event:Connect(function(theme)
-						label.Main.Font = theme.font
-						label.Main.TextColor3 = theme.itemscolor
-					end)
-					function label:Set(value)
-						label.Main.Text = value
-					end
-					sector:FixSize()
-					return label
-				end
-				function sector:AddRedLabel(text)
-					local label2 = { }
-					label.Main = Instance.new("TextLabel", sector.Items)
-					label.Main.Name = "Label"
-					label.Main.BackgroundTransparency = 1
-					label.Main.Position = UDim2.new(0, -1, 0, 0)
-					label.Main.ZIndex = 4
-					label.Main.AutomaticSize = Enum.AutomaticSize.XY
-					label.Main.Font = window.theme.font
-					label.Main.Text = text
 					label.Main.TextColor3 = Color3.fromRGB(0,0,255)
 					label.Main.TextSize = 15
 					label.Main.TextStrokeTransparency = 1
 					label.Main.TextXAlignment = Enum.TextXAlignment.Left
 					updateevent.Event:Connect(function(theme)
 						label.Main.Font = theme.font
-						label.Main.TextColor3 = theme.itemscolor
+						label.Main.TextColor3 = Color3.fromRGB(0,0,255)
 					end)
-					function label2:Set(value)
+					function label:Set(value)
 						label.Main.Text = value
 					end
 					sector:FixSize()
-					return label2
+					return label
 				end
 				function sector:AddToggle(text, default, callback, flag)
 					local toggle = { }
